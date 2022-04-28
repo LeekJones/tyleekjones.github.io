@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit">
+    <link href="https://fonts.googleapis.com/css2?family=Armata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Crif Crawler</title>
+</head>
+
+<body>
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="p-4 pt-5">
+                <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.jpg);"></a>
+                <ul class="list-unstyled components mb-5">
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">Home</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="My_dashboard.html">My Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="My_Profile.html">My Profile</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Register_view.html">Viewer</a>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">Files</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                <a href="My_files.html">My Files</a>
+                            </li>
+                            <li>
+                                <a href="Upload.html">Upload</a>
+                            </li>
+                            <li>
+                                <a href="Global.html">Global Files and Plugins</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Plugins.html">Plugins</a>
+                    </li>
+
+                </ul>
+
+                <div class="footer">
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | This Website was made in collab with the PVAMU College of
+                        Engineering Program <i class="icon-heart" aria-hidden="true"></i>
+                    </p>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                    </button>
+
+
+
+                </div>
+            </nav>
+            
+            <div class="dt-buttons">
+                <div class="dt-buttons btn-group">
+                    <a class="btn btn-default buttons-copy buttons-html5" tabindex="0" aria-controls="example"
+                        href="#"><span>Copy</span></a>
+                    <a class="btn btn-default buttons-csv buttons-html5" tabindex="0" aria-controls="example"
+                        href="#"><span>CSV</span></a>
+                    <a class="btn btn-default buttons-excel buttons-html5" tabindex="0" aria-controls="example"
+                        href="#"><span>Excel</span></a>
+                    <a class="btn btn-default buttons-pdf buttons-html5" tabindex="0" aria-controls="example"
+                        href="#"><span>PDF</span></a>
+                    <a class="btn btn-default buttons-print" tabindex="0" aria-controls="example"
+                        href="#"><span>Print</span></a>
+                </div>
+            </div>
+            
+            <div contenteditable class="table-responsive">
+                <table border="1" class="dataframe" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th></th>
+      <th>DDEntry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>{'Name': 'CH_0', 'Channel': '0', 'Mode': 'INPUT', 'InitialValue': 'LOW', 'Hidden': 'false', 'VrefVoltage': '0', 'Description': 'NONE'}</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{'Name': 'CH_1', 'Channel': '1', 'Mode': 'INPUT', 'InitialValue': 'LOW', 'Hidden': 'false', 'VrefVoltage': '0', 'Description': 'NONE'}</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>{'Name': 'CH_2', 'Channel': '2', 'Mode': 'INPUT', 'InitialValue': 'LOW', 'Hidden': 'false', 'VrefVoltage': '0', 'Description': 'NONE'}</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>{'Name': 'CH_3', 'Channel': '3', 'Mode': 'INPUT', 'InitialValue': 'LOW', 'Hidden': 'false', 'VrefVoltage': '0', 'Description': 'NONE'}</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>{'Name': 'PPV_BMC_RESET_N', 'Channel': '16', 'Mode': 'OUTPUT', 'InitialValue': 'HIGH', 'Hidden': 'false', 'VrefVoltage': '1.8', 'Description': 'Pulse LOW to reset the BMC'}</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>{'Name': 'PPV_CPU_RESET_N', 'Channel': '17', 'Mode': 'OUTPUT', 'InitialValue': 'HIGH', 'Hidden': 'false', 'VrefVoltage': '1.8', 'Description': 'Pulse LOW to reset the CPU'}</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>{'Name': 'PPV_FPGA_INIT_DONE', 'Channel': '34', 'Mode': 'INPUT', 'Hidden': 'false', 'VrefVoltage': '1.8', 'Description': 'NONE'}</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>{'Name': 'PPV_FPGA_CONF_DONE', 'Channel': '35', 'Mode': 'INPUT', 'Hidden': 'false', 'VrefVoltage': '1.8', 'Description': 'NONE'}</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>{'Name': 'PPV_FPGA_NSTATUS', 'Channel': '36', 'Mode': 'INPUT', 'Hidden': 'false', 'VrefVoltage': '1.8', 'Description': 'NONE'}</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>{'Name': 'PPV_FPGA_NCONFIG', 'Channel': '37', 'Mode': 'INPUT', 'Hidden': 'false', 'VrefVoltage': '1.8', 'Description': 'NONE'}</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>{'Name': 'PPV_FPGA_PMBUS_EN', 'Channel': '38', 'Mode': 'INPUT', 'Hidden': 'false', 'VrefVoltage': '1.8', 'Description': 'Monitor only'}</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>{'Name': 'NC_PPV_VCCL_PG', 'Channel': '39', 'Mode': 'INPUT', 'Hidden': 'false', 'VrefVoltage': '1.8', 'Description': 'NONE'}</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>{'Name': 'PPV_MSEL0', 'Channel': '40', 'Mode': 'OUTPUT', 'InitialValue': 'HIGHZ', 'Hidden': 'false', 'VrefVoltage': '1.8', 'Description': 'NONE'}</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>{'Name': 'PPV_MSEL1', 'Channel': '41', 'Mode': 'OUTPUT', 'InitialValue': 'HIGHZ', 'Hidden': 'false', 'VrefVoltage': '1.8', 'Description': 'NONE'}</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>{'Name': 'PPV_MSEL2', 'Channel': '42', 'Mode': 'OUTPUT', 'InitialValue': 'HIGHZ', 'Hidden': 'false', 'VrefVoltage': '1.8', 'Description': 'NONE'}</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>{'Name': 'PPV_MSEL3', 'Channel': '43', 'Mode': 'OUTPUT', 'InitialValue': 'HIGHZ', 'Hidden': 'false', 'VrefVoltage': '1.8', 'Description': 'NONE'}</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>{'Name': 'P5V_IN', 'Channel': '0', 'Gain': '1', 'LowerLimit': '-0.2', 'UpperLimit': '5.5', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'false', 'ThresholdLimit': '0.2'}</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>{'Name': 'P12V_IN', 'Channel': '1', 'Gain': '2', 'LowerLimit': '-0.2', 'UpperLimit': '13.2', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'false', 'ThresholdLimit': '0.2'}</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>{'Name': 'P3P3V_IN', 'Channel': '2', 'Gain': '1', 'LowerLimit': '-0.2', 'UpperLimit': '3.63', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'true', 'ThresholdLimit': '0.3'}</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>{'Name': 'P1P2V_IN', 'Channel': '3', 'Gain': '1', 'LowerLimit': '-0.2', 'UpperLimit': '1.32', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'false', 'ThresholdLimit': '0.2'}</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>{'Name': 'PVCCL', 'Channel': '4', 'Gain': '1', 'LowerLimit': '-0.2', 'UpperLimit': '0.97', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'false', 'ThresholdLimit': '0.2'}</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>{'Name': 'P2P8V_SYS', 'Channel': '5', 'Gain': '1', 'LowerLimit': '-0.2', 'UpperLimit': '3.08', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'false', 'ThresholdLimit': '0.2'}</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>{'Name': 'PVCCL_HPS', 'Channel': '6', 'Gain': '1', 'LowerLimit': '-0.2', 'UpperLimit': '0.99', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'false', 'ThresholdLimit': '0.2'}</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>{'Name': 'PVCCL_SDM', 'Channel': '7', 'Gain': '1', 'LowerLimit': '-0.2', 'UpperLimit': '0.88', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'false', 'ThresholdLimit': '0.2'}</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>{'Name': 'P1P8V_SYS', 'Channel': '9', 'Gain': '1', 'LowerLimit': '-0.2', 'UpperLimit': '1.98', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'false', 'ThresholdLimit': '0.2'}</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>{'Name': 'PVCCN1V_IO_RNR', 'Channel': '10', 'Gain': '1', 'LowerLimit': '-0.2', 'UpperLimit': '1.1', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'false', 'ThresholdLimit': '0.2'}</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>{'Name': 'PVCCA', 'Channel': '11', 'Gain': '1', 'LowerLimit': '-0.2', 'UpperLimit': '1.98', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'false', 'ThresholdLimit': '0.2'}</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>{'Name': 'P1PV8_VCCPLL_HPS', 'Channel': '12', 'Gain': '1', 'LowerLimit': '-0.2', 'UpperLimit': '1.98', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'false', 'ThresholdLimit': '0.2'}</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>{'Name': 'P2P5V_SYS', 'Channel': '13', 'Gain': '1', 'LowerLimit': '-0.2', 'UpperLimit': '2.75', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'false', 'ThresholdLimit': '0.2'}</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>{'Name': 'P1P2V_SYS_A', 'Channel': '14', 'Gain': '1', 'LowerLimit': '-0.2', 'UpperLimit': '1.32', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'false', 'ThresholdLimit': '0.2'}</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>{'Name': 'P1P2V_SYS_B', 'Channel': '15', 'Gain': '1', 'LowerLimit': '-0.2', 'UpperLimit': '1.32', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'false', 'ThresholdLimit': '0.2'}</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>{'Name': 'P1P8V_VCCN', 'Channel': '16', 'Gain': '1', 'LowerLimit': '-0.2', 'UpperLimit': '1.98', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'false', 'ThresholdLimit': '0.2'}</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>{'Name': 'P12V_SYS', 'Channel': '18', 'Gain': '2', 'LowerLimit': '-0.2', 'UpperLimit': '13.2', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'false', 'ThresholdLimit': '0.4'}</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>{'Name': 'P3P3V_SYS', 'Channel': '19', 'Gain': '1', 'LowerLimit': '-0.2', 'UpperLimit': '3.63', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'false', 'ThresholdLimit': '0.2'}</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>{'Name': 'P0P6V_DDR4_VTT_CH0', 'Channel': '20', 'Gain': '1', 'LowerLimit': '-0.2', 'UpperLimit': '0.66', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'false', 'ThresholdLimit': '0.2'}</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>{'Name': 'P0P6V_DDR4_VTT_CH1', 'Channel': '21', 'Gain': '1', 'LowerLimit': '-0.2', 'UpperLimit': '0.66', 'Hidden': 'false', 'Description': None, 'DeactuateCheck': 'false', 'ThresholdLimit': '0.2'}</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+        </div>
+
+        <!--Register view-->
+        
+    </div>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/viewer.js"></script>
+    <script defer type="text/javascript">
+        let myTable = new simpleDatatables.DataTable("#myTable");
+    </script>
+</body>
+
+</html>

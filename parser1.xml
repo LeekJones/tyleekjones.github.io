@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File creation info -->
+<!-- DIO/DVM Map Version: 0.6 -->
+<!-- DIO/DVM Map Date: 20210423 -->
+<!-- Supported Motherboards: FM85 Pyramid Ridge mUDV with SQIB Fab B STDIO BOB -->
+<!-- Generated on 10/11/2020 10:02:58 AM -->
+<!-- Excel version = Office 2013 -->
+<!-- Created by = Syed Hussein Syed Alwi -->
+<!-- Map Revisions -->
+<!-- Rev 0.1 : Initial Release on 12/10/2020 -->
+<!-- Rev 0.5 : Released on 10/11/2020 -->
+<!-- Rev 0.6 : Released on 23/4/2021 - Revised PVCCL from 0.88V to 0.97V -->
+
+<DDMap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsFASEMap>true</IsFASEMap>
+  <MapVersion>0.5</MapVersion>
+  <MapHWType>STDIO</MapHWType>
+  <IsMultiDut>false</IsMultiDut>
+  <TIUCount>1</TIUCount>
+  <Entries>
+    <DDEntry xsi:type="DIOEntry">
+      <Name>CH_0</Name>
+      <Channel>0</Channel>
+      <Mode>INPUT</Mode>
+	  <InitialValue>LOW</InitialValue>
+      <Hidden>false</Hidden>
+      <VrefVoltage>0</VrefVoltage>
+      <Description>NONE</Description>
+    </DDEntry>
+    <DDEntry xsi:type="DIOEntry">
+      <Name>CH_1</Name>
+      <Channel>1</Channel>
+      <Mode>INPUT</Mode>
+	  <InitialValue>LOW</InitialValue>
+      <Hidden>false</Hidden>
+      <VrefVoltage>0</VrefVoltage>
+      <Description>NONE</Description>
+    </DDEntry>
+    <DDEntry xsi:type="DIOEntry">
+      <Name>CH_2</Name>
+      <Channel>2</Channel>
+      <Mode>INPUT</Mode>
+	  <InitialValue>LOW</InitialValue>
+      <Hidden>false</Hidden>
+      <VrefVoltage>0</VrefVoltage>
+      <Description>NONE</Description>
+    </DDEntry>
+    <DDEntry xsi:type="DIOEntry">
+      <Name>CH_3</Name>
+      <Channel>3</Channel>
+      <Mode>INPUT</Mode>
+	  <InitialValue>LOW</InitialValue>
+      <Hidden>false</Hidden>
+      <VrefVoltage>0</VrefVoltage>
+      <Description>NONE</Description>
+    </DDEntry>
+    <DDEntry xsi:type="DIOEntry">
+      <Name>PPV_BMC_RESET_N</Name>
+      <Channel>16</Channel>
+      <Mode>OUTPUT</Mode>
+      <InitialValue>HIGH</InitialValue>
+      <Hidden>false</Hidden>
+      <VrefVoltage>1.8</VrefVoltage>
+      <Description>Pulse LOW to reset the BMC</Description>
+    </DDEntry>
+    <DDEntry xsi:type="DIOEntry">
+      <Name>PPV_CPU_RESET_N</Name>
+      <Channel>17</Channel>
+      <Mode>OUTPUT</Mode>
+      <InitialValue>HIGH</InitialValue>
+      <Hidden>false</Hidden>
+      <VrefVoltage>1.8</VrefVoltage>
+      <Description>Pulse LOW to reset the CPU</Description>
+    </DDEntry>
+    <DDEntry xsi:type="DIOEntry">
+      <Name>PPV_FPGA_INIT_DONE</Name>
+      <Channel>34</Channel>
+      <Mode>INPUT</Mode>
+      <Hidden>false</Hidden>
+      <VrefVoltage>1.8</VrefVoltage>
+      <Description>NONE</Description>
+    </DDEntry>
+    <DDEntry xsi:type="DIOEntry">
+      <Name>PPV_FPGA_CONF_DONE</Name>
+      <Channel>35</Channel>
+      <Mode>INPUT</Mode>
+      <Hidden>false</Hidden>
+      <VrefVoltage>1.8</VrefVoltage>
+      <Description>NONE</Description>
+    </DDEntry>
+    <DDEntry xsi:type="DIOEntry">
+      <Name>PPV_FPGA_NSTATUS</Name>
+      <Channel>36</Channel>
+      <Mode>INPUT</Mode>
+      <Hidden>false</Hidden>
+      <VrefVoltage>1.8</VrefVoltage>
+      <Description>NONE</Description>
+    </DDEntry>
+    <DDEntry xsi:type="DIOEntry">
+      <Name>PPV_FPGA_NCONFIG</Name>
+      <Channel>37</Channel>
+      <Mode>INPUT</Mode>
+      <Hidden>false</Hidden>
+      <VrefVoltage>1.8</VrefVoltage>
+      <Description>NONE</Description>
+    </DDEntry>
+    <DDEntry xsi:type="DIOEntry">
+      <Name>PPV_FPGA_PMBUS_EN</Name>
+      <Channel>38</Channel>
+      <Mode>INPUT</Mode>
+      <Hidden>false</Hidden>
+      <VrefVoltage>1.8</VrefVoltage>
+      <Description>Monitor only</Description>
+    </DDEntry>
+    <DDEntry xsi:type="DIOEntry">
+      <Name>NC_PPV_VCCL_PG</Name>
+      <Channel>39</Channel>
+      <Mode>INPUT</Mode>
+      <Hidden>false</Hidden>
+      <VrefVoltage>1.8</VrefVoltage>
+      <Description>NONE</Description>
+    </DDEntry>
+    <DDEntry xsi:type="DIOEntry">
+      <Name>PPV_MSEL0</Name>
+      <Channel>40</Channel>
+      <Mode>OUTPUT</Mode>
+      <InitialValue>HIGHZ</InitialValue>
+      <Hidden>false</Hidden>
+      <VrefVoltage>1.8</VrefVoltage>
+      <Description>NONE</Description>
+    </DDEntry>
+    <DDEntry xsi:type="DIOEntry">
+      <Name>PPV_MSEL1</Name>
+      <Channel>41</Channel>
+      <Mode>OUTPUT</Mode>
+      <InitialValue>HIGHZ</InitialValue>
+      <Hidden>false</Hidden>
+      <VrefVoltage>1.8</VrefVoltage>
+      <Description>NONE</Description>
+    </DDEntry>
+    <DDEntry xsi:type="DIOEntry">
+      <Name>PPV_MSEL2</Name>
+      <Channel>42</Channel>
+      <Mode>OUTPUT</Mode>
+      <InitialValue>HIGHZ</InitialValue>
+      <Hidden>false</Hidden>
+      <VrefVoltage>1.8</VrefVoltage>
+      <Description>NONE</Description>
+    </DDEntry>
+    <DDEntry xsi:type="DIOEntry">
+      <Name>PPV_MSEL3</Name>
+      <Channel>43</Channel>
+      <Mode>OUTPUT</Mode>
+      <InitialValue>HIGHZ</InitialValue>
+      <Hidden>false</Hidden>
+      <VrefVoltage>1.8</VrefVoltage>
+      <Description>NONE</Description>
+    </DDEntry>
+	<DDEntry xsi:type="SingleDVMEntry">
+      <Name>P5V_IN</Name>
+      <Channel>0</Channel>
+      <Gain>1</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>5.5</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>false</DeactuateCheck>
+      <ThresholdLimit>0.2</ThresholdLimit>
+    </DDEntry>
+    <DDEntry xsi:type="SingleDVMEntry">
+      <Name>P12V_IN</Name>
+      <Channel>1</Channel>
+      <Gain>2</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>13.2</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>false</DeactuateCheck>
+      <ThresholdLimit>0.2</ThresholdLimit>
+    </DDEntry>
+    <DDEntry xsi:type="SingleDVMEntry">
+      <Name>P3P3V_IN</Name>
+      <Channel>2</Channel>
+      <Gain>1</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>3.63</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>true</DeactuateCheck>
+      <ThresholdLimit>0.3</ThresholdLimit>
+    </DDEntry>
+    <DDEntry xsi:type="SingleDVMEntry">
+      <Name>P1P2V_IN</Name>
+      <Channel>3</Channel>
+      <Gain>1</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>1.32</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>false</DeactuateCheck>
+      <ThresholdLimit>0.2</ThresholdLimit>
+    </DDEntry>
+    <DDEntry xsi:type="SingleDVMEntry">
+      <Name>PVCCL</Name>
+      <Channel>4</Channel>
+      <Gain>1</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>0.97</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>false</DeactuateCheck>
+      <ThresholdLimit>0.2</ThresholdLimit>
+    </DDEntry>
+    <DDEntry xsi:type="SingleDVMEntry">
+      <Name>P2P8V_SYS</Name>
+      <Channel>5</Channel>
+      <Gain>1</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>3.08</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>false</DeactuateCheck>
+      <ThresholdLimit>0.2</ThresholdLimit>
+    </DDEntry>
+    <DDEntry xsi:type="SingleDVMEntry">
+      <Name>PVCCL_HPS</Name>
+      <Channel>6</Channel>
+      <Gain>1</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>0.99</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>false</DeactuateCheck>
+      <ThresholdLimit>0.2</ThresholdLimit>
+    </DDEntry>
+    <DDEntry xsi:type="SingleDVMEntry">
+      <Name>PVCCL_SDM</Name>
+      <Channel>7</Channel>
+      <Gain>1</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>0.88</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>false</DeactuateCheck>
+      <ThresholdLimit>0.2</ThresholdLimit>
+    </DDEntry>
+    <DDEntry xsi:type="SingleDVMEntry">
+      <Name>P1P8V_SYS</Name>
+      <Channel>9</Channel>
+      <Gain>1</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>1.98</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>false</DeactuateCheck>
+      <ThresholdLimit>0.2</ThresholdLimit>
+    </DDEntry>
+    <DDEntry xsi:type="SingleDVMEntry">
+      <Name>PVCCN1V_IO_RNR</Name>
+      <Channel>10</Channel>
+      <Gain>1</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>1.1</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>false</DeactuateCheck>
+      <ThresholdLimit>0.2</ThresholdLimit>
+    </DDEntry>
+    <DDEntry xsi:type="SingleDVMEntry">
+      <Name>PVCCA</Name>
+      <Channel>11</Channel>
+      <Gain>1</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>1.98</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>false</DeactuateCheck>
+      <ThresholdLimit>0.2</ThresholdLimit>
+    </DDEntry>
+    <DDEntry xsi:type="SingleDVMEntry">
+      <Name>P1PV8_VCCPLL_HPS</Name>
+      <Channel>12</Channel>
+      <Gain>1</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>1.98</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>false</DeactuateCheck>
+      <ThresholdLimit>0.2</ThresholdLimit>
+    </DDEntry>
+    <DDEntry xsi:type="SingleDVMEntry">
+      <Name>P2P5V_SYS</Name>
+      <Channel>13</Channel>
+      <Gain>1</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>2.75</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>false</DeactuateCheck>
+      <ThresholdLimit>0.2</ThresholdLimit>
+    </DDEntry>
+    <DDEntry xsi:type="SingleDVMEntry">
+      <Name>P1P2V_SYS_A</Name>
+      <Channel>14</Channel>
+      <Gain>1</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>1.32</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>false</DeactuateCheck>
+      <ThresholdLimit>0.2</ThresholdLimit>
+    </DDEntry>
+    <DDEntry xsi:type="SingleDVMEntry">
+      <Name>P1P2V_SYS_B</Name>
+      <Channel>15</Channel>
+      <Gain>1</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>1.32</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>false</DeactuateCheck>
+      <ThresholdLimit>0.2</ThresholdLimit>
+    </DDEntry>
+    <DDEntry xsi:type="SingleDVMEntry">
+      <Name>P1P8V_VCCN</Name>
+      <Channel>16</Channel>
+      <Gain>1</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>1.98</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>false</DeactuateCheck>
+      <ThresholdLimit>0.2</ThresholdLimit>
+    </DDEntry>
+    <DDEntry xsi:type="SingleDVMEntry">
+      <Name>P12V_SYS</Name>
+      <Channel>18</Channel>
+      <Gain>2</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>13.2</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>false</DeactuateCheck>
+      <ThresholdLimit>0.4</ThresholdLimit>
+    </DDEntry>
+    <DDEntry xsi:type="SingleDVMEntry">
+      <Name>P3P3V_SYS</Name>
+      <Channel>19</Channel>
+      <Gain>1</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>3.63</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>false</DeactuateCheck>
+      <ThresholdLimit>0.2</ThresholdLimit>
+    </DDEntry>
+    <DDEntry xsi:type="SingleDVMEntry">
+      <Name>P0P6V_DDR4_VTT_CH0</Name>
+      <Channel>20</Channel>
+      <Gain>1</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>0.66</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>false</DeactuateCheck>
+      <ThresholdLimit>0.2</ThresholdLimit>
+    </DDEntry>
+    <DDEntry xsi:type="SingleDVMEntry">
+      <Name>P0P6V_DDR4_VTT_CH1</Name>
+      <Channel>21</Channel>
+      <Gain>1</Gain>
+      <LowerLimit>-0.2</LowerLimit>
+      <UpperLimit>0.66</UpperLimit>
+      <Hidden>false</Hidden>
+      <Description />
+      <DeactuateCheck>false</DeactuateCheck>
+      <ThresholdLimit>0.2</ThresholdLimit>
+    </DDEntry>
+  </Entries>
+</DDMap>
